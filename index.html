@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="title">Survey form</h1>
+      <p id="description">Personal data form</p>
+      <form method="POST" action="#" id="survey-form">
+        <!-- data -->
+
+        <fieldset class="fieldset-one">
+          <h2>Basic Data</h2>
+          <label for="name" id="name-label">
+            Name:
+            <input
+              type="text"
+              name="name-label"
+              id="name"
+              placeholder="John Smith"
+              required
+            />
+          </label>
+          <label for="email" id="email-label">
+            Email:
+            <input
+              type="email"
+              name="email-label"
+              id="email"
+              placeholder="smithjohn@example.com"
+              required
+            />
+          </label>
+          <label for="number" id="number-label">
+            Age (optional):
+            <input
+              type="number"
+              name="number-label"
+              id="number"
+              min="13"
+              max="120"
+              placeholder="18"
+            />
+          </label>
+        </fieldset>
+
+        <!-- options -->
+
+        <fieldset>
+          <h2>About you</h2>
+          <p>What kind of pet do you have??</p>
+          <select name="pet" id="dropdown">
+            <option value="option" selected disabled>Choose an option:</option>
+            <option value="none">I don't have</option>
+            <option value="cat">Cat</option>
+            <option value="dog">Dog</option>
+            <option value="other">Other</option>
+          </select>
+          <p>How do you feel?</p>
+          <label for="happy">
+            <input 
+              type="radio" 
+              name="emotion" 
+              id="happy" 
+              value="happy"
+              class="radio" 
+            /> Happy
+          </label>
+          <label for="sad">
+            <input 
+              type="radio" 
+              name="emotion" 
+              id="sad" 
+              value="sad"
+              class="radio" 
+            /> Sad
+          </label>
+          <p>You're a person...</p>
+          <label for="rebellious">
+            <input 
+              type="checkbox" 
+              name="attribute" 
+              id="rebellious" 
+              class="checkbox"
+              value="rebellious"
+            /> Rebellious
+          </label>
+          <label for="conservative">
+            <input
+              type="checkbox"
+              name="attribute"
+              id="conservative"
+              class="checkbox"
+              value="conservative"
+            /> Conservative
+          </label>
+          <label for="shrewd">
+            <input 
+              type="checkbox" 
+              name="attribute" 
+              id="shrewd" 
+              class="checkbox"
+              value="shrewd"
+            /> Shrewd
+          </label>
+          <label for="naive">
+            <input 
+              type="checkbox" 
+              name="attribute" 
+              id="naive" 
+              class="checkbox"
+              value="naive"
+            /> Naive
+          </label>
+          <label for="kind">
+            <input 
+              type="checkbox" 
+              name="attribute" 
+              id="kind" 
+              class="checkbox"
+              value="kind"
+            /> Kind
+          </label>
+          <p>Write more about yourself:</p>
+          <textarea cols="30" rows="10"></textarea>
+        </fieldset>
+
+        <!-- submit form -->
+        <input type="submit" value="Submit" id="submit"/>
+      </form>
+    </div>
+  </body>
+</html>
